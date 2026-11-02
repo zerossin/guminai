@@ -1,9 +1,15 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
 Flask
+Flask-Cors
 PyYAML
 python-dotenv
 requests
 faiss-cpu
-langchain
+langchain>=0.3,<0.4
+langchain-community>=0.3,<0.4
+langchain-huggingface>=0.1,<0.2
+sentence-transformers
+torch
 huggingface-hub
 transformers
 numpy

@@ -69,6 +69,11 @@ app.config['AGENT_GENERATOR_SERVICE'] = AgentGeneratorService(
     app.config['CONTEXT_PROVIDER'],
 )
 
+# 컨테이너 상태 확인
+@app.route('/healthz')
+def healthz():
+    return 'ok'
+
 # 블루프린트 등록
 app.register_blueprint(auth_bp)
 app.register_blueprint(chat_bp)
